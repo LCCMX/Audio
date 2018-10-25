@@ -13,7 +13,7 @@ class Particle {
     vel = new PVector(random(-1, 1), random(-1, 1));
 
     h = map(id, 0, fft.specSize(), 0, 360);
-    s = 100;
+    s = 255;
     b = 100;
   }
 
@@ -30,7 +30,7 @@ class Particle {
     radius = _r;
     radius = constrain(radius, 2, 100);
 
-    b = map(_b, -1, 1, 0, 100);
+    b = map(_b, -1, 1, 0, 255);
   }
 
   void render() {
